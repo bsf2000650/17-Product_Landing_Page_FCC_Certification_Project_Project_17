@@ -8,117 +8,7 @@
 
     <link rel="stylesheet" href="styles.css">
     <style>
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        header{
-            /* border: 2px solid black; */
-            /* height: 100px; */
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            /* position: fixed; */
-        }
-        .logo{
-            /* border: 2px solid black; */
-            margin: auto;
-            width: 80%;
-        }
-        ul{
-            /* border: 2px solid black; */
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-        }
-        li{
-            /* border: 2px solid black; */
-            list-style-type: none;
-            text-align: center;
-            padding: 30px;
-        }
-        a{
-            text-decoration: none;
-            color: black;
-            font-size: 20px;   
-        }
-        main{
-            border: 2px solid black;
-            width: 70%;
-            /* height: 900px; */
-            margin: 0 auto;
-        }
-        .hero{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        h1{
-            text-align: center;
-            margin-bottom: 10px;
-        }
-        input{
-            text-align: center;
-            width: 250px;
-            height: 30px;
-            margin-bottom: 10px;
-        }
-        form{
-            /* border: 2px solid black; */
-            text-align: center;
-        }
-        h2{
-            text-align: center;
-            display: inline;
-            padding: 3px;
-            background-color: yellow;
-            margin-bottom: 10px;
-        }
-        .feature{
-            border: 2px solid black;
-            height: 300px;
-            display: grid;
-            grid-template-columns: 20% 1fr;
-            grid-template-rows: repeat(3, 1fr);
-        }
-        .icon{
-            border: 2px solid black;
-        }
-        .premium-materials{
-            border: 2px solid black;
-        }
-        .premium-materials h1{
-            text-align: left;
-        }
-        iframe{
-            border: 2px solid red;
-            height: 330px;
-            width: 70%;
-            /* padding: 10px auto; */
-            margin: 20px 0;
-        }
-        .video-iframe{
-            display: flex;
-            justify-content: center;
-
-        }
-        .cards{
-            display: flex;
-            height: 300px;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-            margin: 20px 0;
-        }
-        .card1{
-            border: 2px solid black;
-            width: 30%;
-            height: 280px;
-        }
-        footer{
-            border: 2px solid black;
-            height: 100px;
-        }
+        
     </style>
 </head>
 <body>
@@ -130,52 +20,94 @@
             <li><a href="#pricing">Pricing</a></li>
         </ul>
     </header>
+    
     <main>
         <section class="hero">
             <h1>Handcrafted, home-made masterpieces</h1>
             <form id="form" action="https://www.freecodecamp.com/email-submit">
                 <input type="email" id="email" name="email" placeholder="Enter your email">
             </form>
-            <h2>GET STARTED</h2>
+            <div class="button-align">
+                <button class="get-started"><a href="#feature">Get Started</a></button>
+            </div>
         </section>
 
         <section class="feature">
             <div class="icon">
-                <i class="fa-solid fa-fire-flame-curved"></i>
+                <img src="images/fire.PNG" alt="">
             </div>
-            <div class="premium-materials">
+            <div id="features"class="premium-materials">
+                <h1>Premium Materials</h1>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+            </div>
+
+            <div  class="icon">
+                <img src="images/truck.PNG" alt="">
+            </div>
+            <div  class="premium-materials">
                 <h1>Premium Materials</h1>
                 <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
             </div>
 
             <div class="icon">
-                <i class="fa-solid fa-fire-flame-curved"></i>
+                <img src="images/battery.PNG" alt="">
             </div>
-            <div class="premium-materials">
-                <h1>Premium Materials</h1>
-                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
-            </div>
-
-            <div class="icon">
-                <i class="fa-solid fa-fire-flame-curved"></i>
-            </div>
-            <div class="premium-materials">
+            <div  class="premium-materials">
                 <h1>Premium Materials</h1>
                 <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
             </div>
         </section>
-        <div class="video-iframe">
+        <div id="how-it-works" class="video-iframe">
             <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
 
-        <section class="cards">
-            <div class="card1"></div>
-            <div class="card1"></div>
-            <div class="card1"></div>
+        <section id="pricing" class="cards">
+
+            <div class="card1">
+                <h3>Tenor trombone</h3>
+                <p class="price">$600</p>
+                <p class="card1-details">Lorem ipsum</p>
+                <p class="card1-details">Lorem ipsum</p>
+                <p class="card1-details">Lorem, ipsum dolor.</p>
+                <p class="card1-details">Lorem ipsum</p>
+                <div class="button-align">
+                    <button class="button-select"><a href="#feature">Select</a></button>
+                </div>
+            </div>
+
+            <div class="card1">
+                <h3>BASS TROMBONE</h3>
+                <p class="price">$900</p>
+                <p class="card1-details">Lorem ipsum</p>
+                <p class="card1-details">Lorem ipsum</p>
+                <p class="card1-details">Lorem, ipsum dolor.</p>
+                <p class="card1-details">Lorem ipsum</p>
+                <div class="button-align">
+                    <button class="button-select"><a href="#feature">Select</a></button>
+                </div>
+            </div>
+
+            <div class="card1">
+                <h3>VALVE TROMBONE</h3>
+                <p class="price">$1200</p>
+                <p class="card1-details">Lorem ipsum</p>
+                <p class="card1-details">Lorem ipsum</p>
+                <p class="card1-details">Lorem, ipsum dolor.</p>
+                <p class="card1-details">Lorem ipsum</p>
+                <div class="button-align">
+                    <button class="button-select"><a href="#feature">Select</a></button>
+                </div>
+
+            </div>
         </section>
-
-
-        <footer></footer>
+        <footer>
+            <ul>
+                <li><a href="#privacy">Privacy</a></li>
+                <li><a href="#terms">Terms</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <p>Copyright 2016, Original Trombones.</p>
+        </footer>
     </main>
 </body>
 </html>
